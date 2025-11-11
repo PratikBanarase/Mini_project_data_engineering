@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import os
-from sklearn.ensemble import RandomForestClassifier
+
 
 # Set page configuration
 st.set_page_config(
@@ -299,3 +299,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
