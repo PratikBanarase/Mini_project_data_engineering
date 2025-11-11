@@ -6,7 +6,7 @@ import pickle
 
 # Load the trained model, scaler, and encoders
 with open("loan_approval_model.pkl", "rb") as f:
-    model, scaler, encoders = pickle.load(f)
+    model = pickle.load(f)
 
 # ---- HEADER BAR SECTION ----
 st.set_page_config(page_title="Loan Approval Predictor", page_icon="🏦", layout="wide")
@@ -220,3 +220,4 @@ st.markdown(
     "<div style='text-align: center; color: gray;'>Loan Approval Prediction System • Built with Streamlit</div>", 
     unsafe_allow_html=True
 )
+
